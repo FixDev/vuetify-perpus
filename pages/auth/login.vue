@@ -32,9 +32,9 @@
                 <v-form>
                   <v-text-field
                     outline
-                    label="Username"
+                    label="Email"
                     type="text"
-                    v-model="username"
+                    v-model="email"
                   ></v-text-field>
                   <v-text-field
                     outline
@@ -70,7 +70,7 @@ export default {
       darkTheme: true,
       platformName: "E-Library",
       password: null,
-      username: null
+      email: null
     };
   }
 };
