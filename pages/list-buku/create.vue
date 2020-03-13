@@ -14,14 +14,13 @@
     <v-row>
       <v-col cols="12" sm="4"> </v-col>
       <v-col cols="12" sm="4" class="d-flex">
-        <v-select
-          v-for="buku in bukus"
-          :key="buku.kategori"
-          :items="buku.kategori"
-          label="Outlined style"
-          dense
-          outlined
-        >Pilih Kategori</v-select>
+        <ListKat
+          v-for="kat in kategoris"
+          :key="kat.id"
+          :id="kat.id"
+          :nama="kat.nama"
+        >
+        </ListKat>
       </v-col>
     </v-row>
     <v-row>
@@ -58,8 +57,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="7" sm="4">
-      </v-col>
+      <v-col cols="7" sm="4"> </v-col>
       <v-col cols="5" sm="4">
         <v-btn color="success" large dark>
           Simpah
@@ -70,14 +68,29 @@
 </template>
 
 <script>
+import ListKat from "~/components/content/list-kategori.vue";
+
 export default {
+  components: {
+    ListKat
+  },
+
   data() {
     return {
-      buku: {}
+      bukus: {},
+      kategoris: []
     };
   },
   methods: {
-    simpan() {
+    async getData() {
+      try {
+        const res = await this.$axios.get("http://localhost:3001/kategoris");
+        this.kategoris = res.data;
+      } catch (err) {
+        console.error(err);
+      }
+    },
+    async simpan() {
       this.$axios.post("http://localhost:3001/bukus", this.buku).then(send => {
         this.$router.push("/list-buku");
       });
