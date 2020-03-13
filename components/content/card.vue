@@ -15,31 +15,29 @@
                     height="200px"
                     :src="kat.img"
                     >
-                    <v-card-title>{{kat.judul}}</v-card-title>
+                    <v-card-title style="text-shadow: 1.4px 0.8px grey;">{{kat.judul}}</v-card-title>
                     </v-img>
 
                     <v-card-subtitle class="pb-0">{{ kat.penulis }}</v-card-subtitle>
 
                     <v-card-text class="text--primary">
-                    <div>Whitehaven Beach</div>
-
-                    <div>Whitsunday Island, Whitsunday Islands</div>
+                    <div>{{kat.desc}}</div>
                     </v-card-text>
 
                     <v-card-actions>
                     <v-btn
-                        color="orange"
-                        text
+                        color="info"
                     >
-                        Share
+                        Details
                     </v-btn>
-
-                    <v-btn
-                        color="orange"
-                        text
-                    >
-                        Explore
-                    </v-btn>
+                    <nuxt-link style="text-decoration: none;" :to="'/list-buku'">
+                        <v-btn
+                            color="orange"
+                            text
+                        >
+                            Lainnya..
+                        </v-btn>
+                    </nuxt-link>
                     </v-card-actions>
                 </v-card>
             </v-row>
@@ -54,7 +52,7 @@
             categories:[
                 { judul: 'Sang Pangeran', penulis: 'Salim A Fillah', img: 'https://s1.bukalapak.com/img/10307414761/w-300/data.jpeg.webp', desc: 'Buku sejarah'},
                 { judul: 'Isa Bin Maryam', penulis: 'Ali Muhammad Ash Shallabi', img: 'https://s1.bukalapak.com/img/19684331581/w-300/data.jpeg.webp', desc: 'Sejarah Nabi Isa'},
-                { judul: 'Sejarah sejarah', penulis: 'Anton', img: 'https://s1.bukalapak.com/img/19684331581/w-300/data.jpeg.webp', desc: 'kosong'},
+                { judul: 'Menjerat Gus Dur', penulis: 'Virdika Rizky Utama', img: 'https://s1.bukalapak.com/img/10945046191/w-300/data.jpeg.webp', desc: 'kosong'},
             ],
         }
     }
