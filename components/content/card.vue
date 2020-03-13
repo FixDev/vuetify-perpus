@@ -1,152 +1,47 @@
 <template>
     <div>
         <v-container fluid>
-            <v-row dense>
+            <v-row
+            :align="alignment"
+            :justify="justify">
                 <v-card
+                    v-for="kat in categories"
+                    :key="kat.judul"
                     class="mx-auto"
-                    max-width="344"
+                    max-width="400"
                 >
                     <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                    class="white--text align-end"
                     height="200px"
-                    ></v-img>
+                    :src="kat.img"
+                    >
+                    <v-card-title>{{kat.judul}}</v-card-title>
+                    </v-img>
 
-                    <v-card-title>
-                    Top western road trips
-                    </v-card-title>
+                    <v-card-subtitle class="pb-0">{{ kat.penulis }}</v-card-subtitle>
 
-                    <v-card-subtitle>
-                    1,000 miles of wonder
-                    </v-card-subtitle>
+                    <v-card-text class="text--primary">
+                    <div>Whitehaven Beach</div>
+
+                    <div>Whitsunday Island, Whitsunday Islands</div>
+                    </v-card-text>
 
                     <v-card-actions>
-                    <v-btn text>Share</v-btn>
+                    <v-btn
+                        color="orange"
+                        text
+                    >
+                        Share
+                    </v-btn>
 
                     <v-btn
-                        color="purple"
+                        color="orange"
                         text
                     >
                         Explore
                     </v-btn>
-
-                    <v-spacer></v-spacer>
-
-                    <v-btn
-                        icon
-                        @click="show = !show"
-                    >
-                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
                     </v-card-actions>
-
-                    <v-expand-transition>
-                    <div v-show="show">
-                        <v-divider></v-divider>
-
-                        <v-card-text>
-                        I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                        </v-card-text>
-                    </div>
-                    </v-expand-transition>
                 </v-card>
-
-                <!-- Card 2 -->
-                <v-card
-                    class="mx-auto"
-                    max-width="344"
-                >
-                    <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                    height="200px"
-                    ></v-img>
-
-                    <v-card-title>
-                    Top western road trips
-                    </v-card-title>
-
-                    <v-card-subtitle>
-                    1,000 miles of wonder
-                    </v-card-subtitle>
-
-                    <v-card-actions>
-                    <v-btn text>Share</v-btn>
-
-                    <v-btn
-                        color="purple"
-                        text
-                    >
-                        Explore
-                    </v-btn>
-
-                    <v-spacer></v-spacer>
-
-                    <v-btn
-                        icon
-                        @click="show = !show"
-                    >
-                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                    </v-card-actions>
-
-                    <v-expand-transition>
-                    <div v-show="show">
-                        <v-divider></v-divider>
-
-                        <v-card-text>
-                        I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                        </v-card-text>
-                    </div>
-                    </v-expand-transition>
-                </v-card>
-
-                <!-- Card 3 -->
-                <v-card
-                    class="mx-auto"
-                    max-width="344"
-                >
-                    <v-img
-                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                    height="200px"
-                    ></v-img>
-
-                    <v-card-title>
-                    Top western road trips
-                    </v-card-title>
-
-                    <v-card-subtitle>
-                    1,000 miles of wonder
-                    </v-card-subtitle>
-
-                    <v-card-actions>
-                    <v-btn text>Share</v-btn>
-
-                    <v-btn
-                        color="purple"
-                        text
-                    >
-                        Explore
-                    </v-btn>
-
-                    <v-spacer></v-spacer>
-
-                    <v-btn
-                        icon
-                        @click="show = !show"
-                    >
-                        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                    </v-card-actions>
-
-                    <v-expand-transition>
-                    <div v-show="show">
-                        <v-divider></v-divider>
-
-                        <v-card-text>
-                        I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                        </v-card-text>
-                    </div>
-                    </v-expand-transition>
-                </v-card> 
             </v-row>
         </v-container>
     </div>
@@ -154,8 +49,14 @@
 
 <script>
   export default {
-    data: () => ({
-      show: false,
-    }),
+    data(){
+        return{
+            categories:[
+                { judul: 'Sang Pangeran', penulis: 'Salim A Fillah', img: 'https://s1.bukalapak.com/img/10307414761/w-300/data.jpeg.webp', desc: 'Buku sejarah'},
+                { judul: 'Isa Bin Maryam', penulis: 'Ali Muhammad Ash Shallabi', img: 'https://s1.bukalapak.com/img/19684331581/w-300/data.jpeg.webp', desc: 'Sejarah Nabi Isa'},
+                { judul: 'Sejarah sejarah', penulis: 'Anton', img: 'https://s1.bukalapak.com/img/19684331581/w-300/data.jpeg.webp', desc: 'kosong'},
+            ],
+        }
+    }
   }
 </script>
