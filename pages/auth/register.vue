@@ -35,12 +35,14 @@
                     label="Nama"
                     type="text"
                     v-model="nama"
+                    color="info"
                   ></v-text-field>
                   <v-text-field
                     outline
                     label="Email"
                     type="text"
                     v-model="email"
+                    color="info"
                   ></v-text-field>
                   <v-text-field
                     outline
@@ -48,6 +50,7 @@
                     label="Password"
                     type="password"
                     v-model="password"
+                    color="info"
                   ></v-text-field>
                 </v-form>
               </v-card-text>
