@@ -1,113 +1,80 @@
 {
-    "buku": [
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        },
-        {
-            "id": 1,
-            "judul": "Hacker",
-            "kategori": "Komputer"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "email": "tetamba@gmail.com",
+      "password": "indomie"
+    }
+  ],
+  "bukus": [
+    {
+      "id": 2,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 3,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 4,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 5,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 6,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 7,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 8,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 9,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    },
+    {
+      "id": 10,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
+    }
+  ],
+  "komentars": [
+    {
+      "id": 1,
+      "komentar": "Bagus Sekali"
+    }
+  ]
 }

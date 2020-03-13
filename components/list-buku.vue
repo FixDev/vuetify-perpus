@@ -1,17 +1,17 @@
 <template>
     <tbody>
         <tr>
-            <td>{{ id }}</td>
-            <td>{{ judul }}</td>
-            <td>{{ kategori }}</td>
-            <td>
-                <nuxt-link :to="'/li-post/' + id">
-                    <button class="btn btn-sm btn-primary">Detail</button>
+            <td align="center">{{ id }}</td>
+            <td align="center">{{ judul }}</td>
+            <td align="center">{{ deskripsi }}</td>
+            <td align="center">
+                <nuxt-link :to="'/list-buku/' + id" style="text-decoration:  none;">
+                    <v-btn small outlined color="info" >Detail</v-btn>
                 </nuxt-link>
-               <nuxt-link :to="'/li-post/' + id + '/edit'">
-                    <button class="btn btn-sm btn-warning">Ubah</button>
+               <nuxt-link :to="'/list-buku/' + id + '/edit'" style="text-decoration:  none;">
+                    <v-btn small outlined color="warning">Ubah</v-btn>
                </nuxt-link>
-                    <button @click="hapus" class="btn btn-sm btn-danger">Hapus</button>
+                    <v-btn small outlined @click="hapus" color="error">Hapus</v-btn>
             </td>
         </tr>
     </tbody>
@@ -29,7 +29,7 @@ export default {
             type: String,
             default: ''
         },
-        kategori:{
+        deskripsi:{
             type: String,
             default: ''
         },
@@ -47,9 +47,9 @@ export default {
                 return
             };
 
-            this.$axios.delete('http://localhost:3001/buku/' + this.id)
+            this.$axios.delete('http://localhost:3001/bukus/' + this.id)
             .then((del) => {
-                this.$emit('muat-ulang');
+                this.$emit('refresh-ah');
             });
         },
     }
