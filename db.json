@@ -9,7 +9,7 @@
   "bukus": [
     {
       "id": 2,
-      "judul": "Hacker",
+      "judul": "Hacker2",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
       "penulis": "Muhammad Fikri"
     },
@@ -60,6 +60,12 @@
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
       "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": "1",
+      "judul": "ini judul",
+      "deskripsi": "ini deskripsi",
+      "penulis": "saya penulis"
     }
   ],
   "kategoris": [

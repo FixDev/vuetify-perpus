@@ -60,9 +60,19 @@ export default {
       buku: {},
     };
   },
+  mounted(){
+      this.getDetail()
+  },
   methods: {
+    getDetail(){
+        this.$axios
+      .get("http://localhost:3001/bukus/" + this.$route.params.id)
+      .then(res => {
+        this.buku = res.data || {};
+      });
+    },
     simpan() {
-      this.$axios.post("http://localhost:3001/bukus", this.buku).then(send => {
+      this.$axios.patch("http://localhost:3001/bukus/" + this.$route.params.id, this.buku).then(send => {
         this.$router.push("/list-buku");
       });
     }

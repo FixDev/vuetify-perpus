@@ -8,9 +8,12 @@
         append-icon="mdi-magnify"
       ></v-text-field>
     </div>
+    <nuxt-link to="/list-buku/create">
+
     <v-btn class="mx-2" fab dark color="indigo">
       <v-icon dark>mdi-plus</v-icon>
     </v-btn>
+    </nuxt-link>
     <!-- content -->
     <p v-if="isError">Error Tidak Mendapatkan Data</p>
     <p v-else-if="isEmpty">Data Tidak Ada Pada Table</p>
