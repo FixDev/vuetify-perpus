@@ -11,74 +11,64 @@
       "id": 2,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 3,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
-    },
-    {
-      "id": 3,
-      "judul": "Hacker",
-      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 4,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 5,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 6,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 7,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 8,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 9,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     },
     {
       "id": 10,
       "judul": "Hacker",
       "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
-      "penulis": "Muhammad Fikri"
-    }
-  ],
-  "kategoris": [
-    {
-      "id": 1,
-      "nama": "Komputer"
-    },
-    {
-      "id": 1,
-      "nama": "Sains"
-    },    {
-      "id": 1,
-      "nama": "Biologi"
+      "penulis": "Muhammad Fikri",
+      "kategori": "komputer"
     }
   ],
   "komentars": [

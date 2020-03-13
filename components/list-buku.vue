@@ -3,7 +3,7 @@
         <tr>
             <td align="center">{{ id }}</td>
             <td align="center">{{ judul }}</td>
-            <td align="center">{{ kategori }}</td>
+            <td align="center">{{ deskripsi }}</td>
             <td align="center">
                 <nuxt-link :to="'/list-buku/' + id" style="text-decoration:  none;">
                     <v-btn small outlined color="info" >Detail</v-btn>
@@ -29,7 +29,7 @@ export default {
             type: String,
             default: ''
         },
-        kategori:{
+        deskripsi:{
             type: String,
             default: ''
         },

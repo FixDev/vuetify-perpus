@@ -29,7 +29,7 @@
           :id="buku.id"
           :key="buku.id"
           :judul="buku.judul"
-          :kategori="buku.kategori"
+          :deskripsi="buku.deskripsi"
           @refresh-ah="getData"
         >
         </ListItem>
