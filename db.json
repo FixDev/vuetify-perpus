@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "tetamba@gmail.com",
+      "password": "indomie"
+    }
+  ],
+  "bukus": [
+    {
+      "id": 2,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 3,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 3,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 4,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 5,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 6,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 7,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 8,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 9,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    },
+    {
+      "id": 10,
+      "judul": "Hacker",
+      "deskripsi": "Ini adalah buku untuk belajar menjadi seorang hacker profesional!",
+      "penulis": "Muhammad Fikri"
+    }
+  ],
+  "kategoris": [
+    {
+      "id": 1,
+      "nama": "Komputer"
+    },
+    {
+      "id": 1,
+      "nama": "Sains"
+    },    {
+      "id": 1,
+      "nama": "Biologi"
+    }
+  ],
+  "komentars": [
+    {
+      "id": 1,
+      "komentar": "Bagus Sekali"
+    }
+  ]
+}
