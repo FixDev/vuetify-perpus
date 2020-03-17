@@ -8,7 +8,7 @@
         append-icon="mdi-magnify"
       ></v-text-field>
     </div>
-    <nuxt-link to="/list-buku/create">
+    <nuxt-link style="text-decoration: none;" to="/list-buku/create">
 
     <v-btn class="mx-2" fab dark color="indigo">
       <v-icon dark>mdi-plus</v-icon>

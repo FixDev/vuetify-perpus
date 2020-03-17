@@ -43,9 +43,12 @@
     <v-row>
       <v-col cols="7" sm="4"> </v-col>
       <v-col cols="5" sm="4">
-        <v-btn @click.prevent="simpan" color="success" large dark>
+        <v-btn @click.prevent="simpan" color="success" large>
           Simpan
         </v-btn>
+        <nuxt-link style="text-decoration: none;" :to="'/list-buku'">
+          <v-btn large>Kembali</v-btn>
+        </nuxt-link>
       </v-col>
     </v-row>
   </div>

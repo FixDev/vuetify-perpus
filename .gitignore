@@ -66,7 +66,22 @@ typings/
 .next
 
 # nuxt.js build output
-.nuxt
+.nuxt/components
+.nuxt/views
+.nuxt/App.js
+.nuxt/axios.js
+.nuxt/client.js
+.nuxt/empty.js
+.nuxt/index.js
+.nuxt/loading.html
+.nuxt/middleware.js
+.nuxt/nuxt-icons.js
+.nuxt/router.js
+.nuxt/router.scrollBehavior.js
+.nuxt/server.js
+.nuxt/utils.js
+.nuxt/workbox.js
+.nuxt/vuetify/plugin.js
 
 # Nuxt generate
 dist
