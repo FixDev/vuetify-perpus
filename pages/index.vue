@@ -13,7 +13,18 @@
       </v-btn-toggle>
     </v-row>
     
-    <Card />
+    <v-row
+    align="center"
+    justify="center">
+    <!-- .slice(0,3) memfilter dari data ke 0 sampai data ke 2 yang di tampilkan dalam satu halaman -->
+      <Card
+      v-for="buku in bukus.slice(0,3)"
+      :key="buku.id"
+      :id="buku.id"
+      :judul="buku.judul"
+      :penulis="buku.penulis"
+      :deskripsi="buku.deskripsi"></Card>
+    </v-row>
   </div>
 </template>
 
@@ -31,6 +42,7 @@ export default {
 
   data(){
     return{
+      bukus:[],
       kategoris:[],
       toggle_exclusive: undefined,
     };
@@ -42,9 +54,12 @@ export default {
 
   methods:{
     async getData(){
-      const res = await this.$axios.get('http://localhost:3001/kategoris');
-      this.kategoris = res.data;
-    }
+      const res1 = await this.$axios.get('http://localhost:3001/kategoris');
+      this.kategoris = res1.data;
+      const res2 = await this.$axios.get('http://localhost:3001/bukus');
+      this.bukus = res2.data;
+
+    },
   }
 };
 </script>

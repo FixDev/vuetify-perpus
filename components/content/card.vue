@@ -2,26 +2,22 @@
     <div>
         <v-container fluid>
             <v-row
-            :align="alignment"
-            :justify="justify">
+                style="padding: 4px 10px;"
+                align="center"
+                justify="justify">
                 <v-card
-                    v-for="kat in categories"
-                    :key="kat.judul"
                     class="mx-auto"
-                    max-width="400"
+                    max-width="300px"
                 >
-                    <v-img
-                    class="white--text align-end"
-                    height="200px"
-                    :src="kat.img"
-                    >
-                    <v-card-title style="text-shadow: 1.4px 0.8px grey;">{{kat.judul}}</v-card-title>
+                    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                    height="200px">
+                    <v-card-title style="color: white; text-shadow: 1.4px 0.8px grey;">{{ judul }}</v-card-title>
                     </v-img>
 
-                    <v-card-subtitle class="pb-0">{{ kat.penulis }}</v-card-subtitle>
+                    <v-card-subtitle>{{ penulis }}</v-card-subtitle>
 
                     <v-card-text class="text--primary">
-                    <div>{{kat.desc}}</div>
+                    <div>{{ deskripsi }}</div>
                     </v-card-text>
 
                     <v-card-actions>
@@ -47,13 +43,25 @@
 
 <script>
   export default {
-    data(){
-        return{
-            categories:[
-                { judul: 'Sang Pangeran', penulis: 'Salim A Fillah', img: 'https://s1.bukalapak.com/img/10307414761/w-300/data.jpeg.webp', desc: 'Buku sejarah'},
-                { judul: 'Isa Bin Maryam', penulis: 'Ali Muhammad Ash Shallabi', img: 'https://s1.bukalapak.com/img/19684331581/w-300/data.jpeg.webp', desc: 'Sejarah Nabi Isa'},
-                { judul: 'Menjerat Gus Dur', penulis: 'Virdika Rizky Utama', img: 'https://s1.bukalapak.com/img/10945046191/w-300/data.jpeg.webp', desc: 'kosong'},
-            ],
+    props:{
+        id:{
+            type: String,
+            default: ''
+        },
+
+        judul:{
+            type: String,
+            default:''
+        },
+
+        deskripsi:{
+            type: String,
+            default: ''
+        },
+
+        penulis:{
+            type: String,
+            default: ''
         }
     }
   }
