@@ -1,23 +1,15 @@
 <template>
   <div>
       <v-container>
-          <v-row justify="space-around">
+          <v-row
+          align="center"
+          justify="center">
               <div>
-                  <v-btn class="mx-1" color="info" text>
-                      Komputer
-                  </v-btn>
-
-                  <v-btn class="mx-1" color="info" text>
-                      Novel
-                  </v-btn>
-
-                  <v-btn class="mx-1" color="info" text>
-                      Fiksi Sains
-                  </v-btn>
-
-                  <v-btn class="mx-1" color="info" text>
-                      Ekonomi
-                  </v-btn>
+                <v-btn
+                class="mx-1"
+                color="info" text>
+                {{ nama }}
+                </v-btn>
               </div>
           </v-row>
       </v-container>
@@ -26,7 +18,17 @@
 
 <script>
 export default {
+    props:{
+        id:{
+            type: String,
+            default: ''
+        },
 
+        nama:{
+            type: String,
+            default: ''
+        },
+    },
 }
 </script>
 
